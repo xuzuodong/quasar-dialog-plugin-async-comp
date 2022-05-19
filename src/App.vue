@@ -2,13 +2,13 @@
 import { Dialog } from 'quasar'
 import DialogVue from './Dialog.vue'
 
-function regularDialog() {
+function asyncDialog() {
   Dialog.create({
     component: () => import('./Dialog.vue'),
   })
 }
 
-function asyncDialog() {
+function regularDialog() {
   Dialog.create({
     component: DialogVue,
   })
